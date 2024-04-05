@@ -1,0 +1,21 @@
+#include "kiwi-v3.dtsi"
+
+&default_transform {
+	col-offset = <6>;
+	diode-direction = "col2row";
+
+	row-gpios
+        	= <&pro_micro 20 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN> // row3
+        	, <&pro_micro 19 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN> // row2
+        	, <&pro_micro 18 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN> // row1
+	;
+
+	col-gpios
+		= <&pro_micro 19 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN> // col12
+		, <&pro_micro 18 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN> // col11
+		, <&pro_micro 15 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN> // col10
+		, <&pro_micro 14 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN> // col09
+		, <&pro_micro 16 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN> // col08
+		, <&pro_micro 10 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN> // col07
+
+};

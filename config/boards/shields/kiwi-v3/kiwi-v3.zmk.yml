@@ -1,0 +1,11 @@
+file_format: "1"
+id: kiwi-v3
+name: kiwi-v3
+type: shield
+url: https://github.com/zmkfirmware
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - kiwi-v3_left
+  - kiwi-v3_right
