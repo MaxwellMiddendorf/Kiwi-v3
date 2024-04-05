@@ -1,8 +1,7 @@
 #include "kiwi-v3.dtsi"
-&kscan0 {
-
-	&default_transform { // The matrix transform for this board is 6 columns over because the left half is 6 columns wide according to the matrix.
+&default_transform { // The matrix transform for this board is 6 columns over because the left half is 6 columns wide according to the matrix.
 	};
+&kscan0 {
 
 	col-gpios
 		= <&pro_micro 9 GPIO_ACTIVE_HIGH> // col6
