@@ -1,6 +1,7 @@
 #include "kiwi-v3.dtsi"
 
 &default_transform {
+	compatible = "zmk,kscan-gpio-matrix";
 	col-offset = <6>;
 	diode-direction = "col2row";
 
