@@ -6,6 +6,7 @@
 # distinguish build outputs from each other:
 #
 board: [ "nice_nano_v2" ]
+shield: ["kiwi-v3_left", "kiwi-v3_right"]
 include:
    - board: nice_nano_v2
      shield: kiwi-v3_left
