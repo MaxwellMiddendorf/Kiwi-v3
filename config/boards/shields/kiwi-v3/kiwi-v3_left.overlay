@@ -1,5 +1,6 @@
 #include "kiwi-v3.dtsi"
 &kscan0 {
+	compatible = "zmk,kscan-gpio-matrix";
 	diode-direction = "col2row";
 	
 	row-gpios
