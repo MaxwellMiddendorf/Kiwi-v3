@@ -1,5 +1,5 @@
 #include "kiwi-v3.dtsi"
-&kscan0: kscan {
+&kscan0 {
 	col-gpios
 		= <&pro_micro 9 GPIO_ACTIVE_HIGH> // col6
 		, <&pro_micro 8 GPIO_ACTIVE_HIGH> // col5
