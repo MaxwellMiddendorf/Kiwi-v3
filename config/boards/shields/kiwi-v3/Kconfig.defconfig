@@ -1,4 +1,4 @@
-if SHIELD_KIWI-v3_LEFT
+if SHIELD_KIWI-V3_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "kiwi-v3"
