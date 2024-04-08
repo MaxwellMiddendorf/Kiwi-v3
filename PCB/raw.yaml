@@ -1,0 +1,102 @@
+units:
+  spread: .05
+  choc_plate_thickness: 3
+  pcb_thickness: 3
+
+points:
+  zones:
+    Consonants:
+      key.padding: U
+      columns:
+        Outer:
+        Pinky:
+        Ring.key.stagger: .25U
+        Middle.key.stagger: .25U
+        Index.key.stagger: -.25U
+        Inner:
+      rows:
+        Bottom:
+        Top:
+
+    Vowels:
+      anchor:
+        ref: Consonants_Inner_Bottom
+        shift: [0,-1.5U]
+        rotate: -16
+      columns:
+        Outer:
+        Inner:
+      rows.Row:
+  mirror: 180
+
+outlines:
+  Raw:
+    - where: true
+      what: rectangle
+      size: 1.5u
+      fillet: 0
+
+  _Switch_Cutouts:
+    - where: true
+      what: rectangle
+      size: .95u
+
+  _Bottom_Connection:
+    - where:
+        ref: Vowels_Outer_Row
+        shift: [-15, 0]
+      what: rectangle
+      size: [8u, 1.5u]
+      asym: both
+
+
+  _Inner_Connection:
+    - what: rectangle
+      where:
+        ref: Consonants_Inner_Bottom
+        shift: [0, 0]
+      size: [88.5, 3u]
+      asym: both
+
+  _Inner_Connection_Cutout:
+    - what: rectangle
+      where:
+        ref: Consonants_Inner_Bottom
+        shift: [63, 0]
+      size: [2u, 10u]
+      asym: both
+          
+  Combined:
+    - Raw
+    - _Inner_Connection
+    - _Bottom_Connection
+    - -_Inner_Connection_Cutout
+
+  Final_Outline:
+    - what: outline
+      name: Combined
+      fillet: 2
+      asym: both
+
+pcbs:
+  stenokiwi:
+    outlines:
+      main:
+        outline: Final_Outline
+    footprints:
+      keys:
+        what: choc
+        where: true
+        params:
+          from: GND
+          to: "{{column_net}}"
+          keycaps: true
+          reverse: false
+          hotswap: true
+      Right_MCU:
+        what: promicro
+        where:
+          ref: Consonants_Inner_Top
+          shift: [26, -.5 *(u + spread)]
+          rotate: 180
+        asym: both

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 1N4148W
+D Switching Diode 100V 150mA 1.25V @ 150mA 4ns SOD-123 RoHS
+K
+F https://datasheet.lcsc.com/szlcsc/Changjiang-Electronics-Tech-CJ-1N4148W_C2099.pdf
+$ENDCMP
+#
+#End Doc Library
