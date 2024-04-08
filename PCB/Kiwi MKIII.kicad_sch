@@ -1,0 +1,89 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "d42fec49-ab51-4768-b264-d564aeb86b7e")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 35.56 25.4)
+		(size 100.33 134.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "10b6d487-707f-4d3e-a021-8223252f1991")
+		(property "Sheetname" "Left"
+			(at 35.56 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Kiwi MKIII Left.kicad_sch"
+			(at 35.56 160.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Kiwi MKIII"
+				(path "/d42fec49-ab51-4768-b264-d564aeb86b7e"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 160.02 24.13)
+		(size 100.33 135.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d7b8383f-4832-47db-b427-40736b4a0e57")
+		(property "Sheetname" "Right"
+			(at 160.02 23.4184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Kiwi MKIII Right.kicad_sch"
+			(at 160.02 160.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Kiwi MKIII"
+				(path "/d42fec49-ab51-4768-b264-d564aeb86b7e"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
